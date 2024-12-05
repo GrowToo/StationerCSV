@@ -1,0 +1,10 @@
+GoodsId,GoodsName,GoodsColor,StockQuantity,UnitPrice
+1,Pencil,Yellow,100,1.20
+2,Notebook,Blue,50,3.50
+3,Eraser,White,200,0.80
+4,Pen,Black,150,2.00
+5,Marker,Red,75,1.50
+6,Notebook,Blue,50,"3,5"
+7,Notebook,Blue,50,"3,5"
+8,Notebook,Blue,50,"3,5"
+9,Apple,Red,100,2

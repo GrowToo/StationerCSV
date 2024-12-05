@@ -1,0 +1,24 @@
+﻿<Window x:Class="StationerCSV.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Stationery Management" Height="600" Width="800">
+    <Grid>
+        <!-- Таблиця товарів -->
+        <DataGrid x:Name="GoodsDataGrid" HorizontalAlignment="Left" Height="200" Margin="10,10,0,0" VerticalAlignment="Top" Width="760"/>
+
+        <!-- Введення товарів -->
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10,220,0,0">
+            <TextBox x:Name="GoodsNameBox" Width="150" Margin="5" ToolTip="Enter Goods Name"/>
+            <TextBox x:Name="GoodsColorBox" Width="100" Margin="5" ToolTip="Enter Goods Color"/>
+            <TextBox x:Name="StockQuantityBox" Width="100" Margin="5" ToolTip="Enter Stock Quantity"/>
+            <TextBox x:Name="UnitPriceBox" Width="100" Margin="5" ToolTip="Enter Unit Price"/>
+            <Button Content="Add Goods" Width="100" Margin="5" Click="AddGoodsButton_Click"/>
+        </StackPanel>
+
+        <!-- Розрахунок вартості -->
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10,280,0,0">
+            <TextBox x:Name="CalculateSupplierIdBox" Width="100" Margin="5" ToolTip="Enter Supplier ID for Calculation"/>
+            <Button Content="Calculate Value" Width="150" Margin="5" Click="CalculateValueButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
